@@ -543,6 +543,66 @@
     </div>
 </section>
 
+<div class="resources-toggle-wrapper">
+    <button id="toggleResources" class="resources-toggle-btn">
+        📚 Learning Resources I Use
+    </button>
+    <p class="resources-note">
+        Optional — curated backend & system design reading material.
+    </p>
+</div>
+<section id="resources-section" class="hidden-resources">
+    <h2>Learning Resources</h2>
+
+    <p class="resources-intro">
+        A curated list of articles, blogs, and documentation that I regularly
+        refer to while learning backend engineering and system design.
+    </p>
+
+    <div class="resources-grid">
+
+        <div class="resource-card">
+            <h3>Java & Spring Boot</h3>
+            <ul>
+                <li><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/"
+                       target="_blank">Spring Boot Official Docs</a></li>
+                <li><a href="https://www.baeldung.com/"
+                       target="_blank">Baeldung (Java & Spring)</a></li>
+            </ul>
+        </div>
+
+        <div class="resource-card">
+            <h3>Microservices & Architecture</h3>
+            <ul>
+                <li><a href="https://microservices.io/"
+                       target="_blank">Microservices.io</a></li>
+                <li><a href="https://martinfowler.com/"
+                       target="_blank">Martin Fowler Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="resource-card">
+            <h3>Kafka & Event-Driven</h3>
+            <ul>
+                <li><a href="https://kafka.apache.org/documentation/"
+                       target="_blank">Apache Kafka Docs</a></li>
+                <li><a href="https://www.confluent.io/blog/"
+                       target="_blank">Confluent Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="resource-card">
+            <h3>System Design</h3>
+            <ul>
+                <li><a href="https://github.com/donnemartin/system-design-primer"
+                       target="_blank">System Design Primer</a></li>
+                <li><a href="https://bytebytego.com/"
+                       target="_blank">ByteByteGo</a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
 
 </section>
 
@@ -733,6 +793,21 @@
           memoriesSection.classList.contains("show")
             ? "🙈 Hide Personal Memories"
             : "👀 View Personal Memories";
+      });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleResources = document.getElementById("toggleResources");
+      const resourcesSection = document.getElementById("resources-section");
+
+      toggleResources.addEventListener("click", () => {
+        resourcesSection.classList.toggle("show");
+
+        toggleResources.textContent =
+          resourcesSection.classList.contains("show")
+            ? "🙈 Hide Learning Resources"
+            : "📚 Learning Resources I Use";
       });
     });
 </script>
