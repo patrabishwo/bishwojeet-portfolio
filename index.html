@@ -7,8 +7,12 @@
 </head>
 <body>
 <div id="progress"></div>
-<nav>
-    <ul>
+<nav class="navbar">
+    <div class="nav-left">
+        <span class="logo">BKP</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -16,9 +20,21 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="themeToggle">🌙</button>
 
+    <div class="nav-actions">
+        <a class="resume-btn"
+           href="https://drive.google.com/file/d/1WyOFkKLWr0HnjEuFiR2hvprJxcLLgEG6/view"
+           target="_blank">📄 Resume</a>
+
+        <button id="themeToggle">🌙</button>
+
+        <!-- ✅ Hamburger is here -->
+        <button class="hamburger" id="hamburger">☰</button>
+        <button id="topBtn">↑</button>
+
+    </div>
 </nav>
+
 
 <header id="home" class="hero">
     <div class="hero-card">
@@ -82,6 +98,59 @@
         <div>📈 <strong>Continuous Learner</strong> & Problem Solver</div>
     </div>
 </section>
+
+<section id="philosophy">
+    <h2>How I Work</h2>
+
+    <div class="philosophy-grid">
+        <div class="philosophy-card">
+            <h3>🧠 Problem First</h3>
+            <p>
+                I focus on understanding the business problem before choosing
+                frameworks or tools. Clean logic > fancy tech.
+            </p>
+        </div>
+
+        <div class="philosophy-card">
+            <h3>⚙️ Backend Quality</h3>
+            <p>
+                I care deeply about validation, error handling, logging,
+                and API reliability in production systems.
+            </p>
+        </div>
+
+        <div class="philosophy-card">
+            <h3>📈 Scalability Mindset</h3>
+            <p>
+                I design services assuming they will scale —
+                stateless APIs, async flows, and clean contracts.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="now">
+    <h2>What I’m Working On</h2>
+
+    <ul class="now-list">
+        <li>🚀 Deepening Kafka-based event-driven workflows</li>
+        <li>⚙️ Improving Saga Orchestrator reliability patterns</li>
+        <li>🧪 Writing cleaner exception handling & logs in Spring Boot</li>
+        <li>📚 Studying system design fundamentals for scalable backends</li>
+    </ul>
+</section>
+<section id="strengths">
+    <h2>Key Backend Strengths</h2>
+
+    <div class="strength-tags">
+        <span>REST API Design</span>
+        <span>Exception Handling</span>
+        <span>Microservices Architecture</span>
+        <span>Kafka Event Processing</span>
+        <span>Database Optimization</span>
+        <span>Production Debugging</span>
+    </div>
+</section>
+
 <section>
     <h2>Quick Facts</h2>
     <ul>
@@ -261,6 +330,119 @@
         </div>
     </div>
 </section>
+<section id="coding-profiles">
+    <h2>Coding Profiles</h2>
+
+    <p class="coding-intro">
+        I regularly practice Data Structures and Algorithms to strengthen
+        my problem-solving skills and backend logic.
+    </p>
+
+    <div class="coding-cards">
+        <a href="https://leetcode.com/u/Bishwojeet/"
+           target="_blank"
+           class="coding-card">
+            🟧
+            <div>
+                <h3>LeetCode</h3>
+                <p>DSA • Algorithms • Java</p>
+            </div>
+        </a>
+
+        <a href="https://www.geeksforgeeks.org/profile/bk7869654?tab=activity"
+           target="_blank"
+           class="coding-card">
+            🟩
+            <div>
+                <h3>GeeksforGeeks</h3>
+                <p>Core CS • DSA • Java Practice</p>
+            </div>
+        </a>
+    </div>
+</section>
+<section id="beyond-code">
+    <h2>Beyond Code</h2>
+
+    <p class="beyond-intro">
+        Outside of coding, I enjoy staying active and connected to my roots.
+        Basketball has been a big part of my college life, along with
+        memorable school and campus moments that shaped who I am today.
+    </p>
+
+    <div class="beyond-cards">
+        <div class="beyond-card">
+            🏀
+            <h3>Basketball</h3>
+            <p>College-level games & team moments</p>
+        </div>
+
+        <div class="beyond-card">
+            🎓
+            <h3>College Life</h3>
+            <p>Engineering days & campus memories</p>
+        </div>
+
+        <div class="beyond-card">
+            🏫
+            <h3>School Days</h3>
+            <p>Early memories that built discipline</p>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <a href="#memories-gallery" class="memories-btn">
+        View Memories →
+    </a>
+</section>
+<div class="memories-toggle-wrapper">
+    <button id="toggleMemories" class="memories-toggle-btn">
+        👀 View Personal Memories
+    </button>
+    <p class="memories-note">
+        Optional — personal moments from school & college life.
+    </p>
+</div>
+
+
+<section id="memories-gallery" class="hidden-memories">
+
+    <h2>Memories</h2>
+
+    <p class="gallery-intro">
+        A few moments from my school and college life —
+        basketball games, campus memories, and personal milestones.
+    </p>
+    <div class="gallery-grid">
+        <!-- Basketball -->
+        <a href="./basketball1.jpg" target="_blank">
+            <img src="./basketball1.jpg" alt="College basketball match">
+        </a>
+
+        <a href="./basketball2.jpg" target="_blank">
+            <img src="./basketball2.jpg" alt="Basketball team photo">
+        </a>
+        <a href="./basketball3.jpg" target="_blank">
+            <img src="./basketball3.jpg" alt="Basketball team photo">
+        </a>
+
+        <!-- College -->
+
+        <a href="./college2.jpg" target="_blank">
+            <img src="./college2.jpg" alt="College campus memory">
+        </a>
+
+        <a href="./college3.jpg" target="_blank">
+            <img src="./college3.jpg" alt="College campus memory">
+        </a>
+
+        <a href="./college4.jpg" target="_blank">
+            <img src="./college4.jpg" alt="College campus memory">
+        </a>
+
+
+    </div>
+</section>
+
 <section id="achievements">
     <h2>Achievements & Impact</h2>
 
@@ -364,32 +546,62 @@
 
 </section>
 
-<section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: bishwojeet@email.com</p>
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/bishwojeet-kumar-patra-898288226/" target="_blank">
-                linkedin.com/in/your-linkedin
-            </a>
-        </p>
-        <p>
-            GitHub:
-            <a href="https://github.com/patrabishwo" target="_blank">
-                github.com/your-username
-            </a>
-        </p>
-    </section>
-    <section>
-        <p>
-            Resume:
-            <a href="https://drive.google.com/file/d/1WyOFkKLWr0HnjEuFiR2hvprJxcLLgEG6/view?usp=sharing" target="_blank">
-                Download Resume
-            </a>
-        </p>
+<section id="contact" class="contact-section">
+    <h2>Let’s Connect</h2>
 
-    </section>
+    <p class="contact-intro">
+        I’m open to backend-focused opportunities and discussions around
+        Java, Spring Boot, Microservices, and scalable backend systems.
+        Feel free to reach out — I usually respond quickly.
+    </p>
+    <p style="font-size:14px; color:#64748b;">
+        📍 Bengaluru, India · Open to remote & hybrid roles
+    </p>
+
+
+    <div class="contact-cards">
+        <a href="mailto:bishwojeet@email.com" class="contact-card">
+            📧
+            <div>
+                <h3>Email</h3>
+                <p>bk7869654@email.com</p>
+            </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/bishwojeet-kumar-patra-898288226/"
+           target="_blank"
+           class="contact-card">
+            💼
+            <div>
+                <h3>LinkedIn</h3>
+                <p>Connect professionally</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/patrabishwo"
+           target="_blank"
+           class="contact-card">
+            🧑‍💻
+            <div>
+                <h3>GitHub</h3>
+                <p>View my backend work</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="contact-cta">
+        <a href="https://drive.google.com/file/d/1WyOFkKLWr0HnjEuFiR2hvprJxcLLgEG6/view"
+           target="_blank"
+           class="cta-btn">
+            📄 View Resume
+        </a>
+
+        <a href="mailto:bk7869654@gmail.com" class="cta-btn outline">
+            ✉️ Hire / Contact Me
+        </a>
+    </div>
+</section>
+
 
 </section>
 <script>
@@ -427,6 +639,120 @@
     console.log("%cHey Recruiter 👋 Built with ❤️ by Bishwojeet",
       "color:#38bdf8; font-size:16px; font-weight:bold;");
 </script>
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Close menu when link clicked
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+</script>
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+</script>
+
+<script>
+    const reveals = document.querySelectorAll("section");
+
+    const revealOnScroll = () => {
+      reveals.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        const visible = window.innerHeight - 100;
+        if (top < visible) {
+          section.classList.add("reveal");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+</script>
+<script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+</script>
+<script>
+    const topBtn = document.getElementById("topBtn");
+
+    window.addEventListener("scroll", () => {
+      topBtn.style.display = scrollY > 400 ? "block" : "none";
+    });
+
+    topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("toggleMemories");
+      const memoriesSection = document.getElementById("memories-gallery");
+
+      if (!toggleBtn || !memoriesSection) {
+        console.error("Memories toggle elements not found");
+        return;
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        memoriesSection.classList.toggle("show");
+
+        toggleBtn.textContent =
+          memoriesSection.classList.contains("show")
+            ? "🙈 Hide Personal Memories"
+            : "👀 View Personal Memories";
+      });
+    });
+</script>
+toggleBtn.addEventListener("click", () => {
+const isVisible = memoriesSection.classList.toggle("show");
+
+toggleBtn.textContent = isVisible
+? "🙈 Hide Personal Memories"
+: "👀 View Personal Memories";
+
+if (isVisible) {
+setTimeout(() => {
+memoriesSection.scrollIntoView({ behavior: "smooth", block: "start" });
+}, 200);
+}
+});
+
+
+
+
 <footer class="footer">
     <div class="footer-content">
         <h2>Let’s Build Something Great Together</h2>
