@@ -736,19 +736,7 @@
       });
     });
 </script>
-toggleBtn.addEventListener("click", () => {
-const isVisible = memoriesSection.classList.toggle("show");
 
-toggleBtn.textContent = isVisible
-? "🙈 Hide Personal Memories"
-: "👀 View Personal Memories";
-
-if (isVisible) {
-setTimeout(() => {
-memoriesSection.scrollIntoView({ behavior: "smooth", block: "start" });
-}, 200);
-}
-});
 
 
 
