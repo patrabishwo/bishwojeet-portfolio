@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="progress"></div>
 <nav>
     <ul>
         <li><a href="#home">Home</a></li>
@@ -19,55 +20,347 @@
 
 </nav>
 
-<header>
-    <h1>Bishwojeet Kumar Patra</h1>
-    <p>Java Backend Developer | Spring Boot | Microservices</p>
+<header id="home" class="hero">
+    <div class="hero-card">
+        <div class="hero-img">
+            <!-- Replace src with your real image -->
+            <img src="./my_image.jpg" alt="Bishwojeet Kumar Patra">
+
+        </div>
+
+        <div class="hero-info">
+            <h1>Bishwojeet Kumar Patra</h1>
+            <p class="role">
+                <span id="typing"></span>
+            </p>
+            <ul class="hero-points">
+                <li>📍 Bengaluru, India</li>
+                <li>💼 Software Engineer at NeoSOFT</li>
+                <li>⚡ Building scalable backend systems</li>
+            </ul>
+
+            <div class="hero-links">
+                <a href="https://github.com/patrabishwo" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/bishwojeet-kumar-patra-898288226/" target="_blank">LinkedIn</a>
+                <a href="https://drive.google.com/file/d/1WyOFkKLWr0HnjEuFiR2hvprJxcLLgEG6/view" target="_blank">Resume</a>
+            </div>
+        </div>
+    </div>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        Java Backend Developer with hands-on experience in Spring Boot,
-        REST APIs, and microservices. Worked on real-world systems at NeoSOFT
-        for Xpressbees.
-    </p>
-</section>
 
+<section id="about">
+    <h2>About Me</h2>
+
+    <p class="about-text">
+        I am a Java Backend Developer with hands-on experience in building
+        scalable, production-ready backend systems using
+        <strong>Java, Spring Boot, and Microservices</strong>.
+        Currently working as a <strong>Associate Software Engineer at NeoSOFT</strong>,
+        where I contribute to real-world enterprise applications for
+        <strong>Xpressbees</strong>.
+    </p>
+
+    <p class="about-text">
+        I specialize in designing REST APIs, integrating external systems,
+        handling complex business flows, and writing clean, maintainable code.
+        I enjoy solving backend problems related to
+        <strong>performance, scalability, and system reliability</strong>.
+    </p>
+
+    <p class="about-text">
+        I am actively learning advanced backend concepts such as
+        <strong>event-driven architecture, Kafka-based workflows, and distributed systems</strong>.
+        My goal is to grow as a strong backend engineer who builds systems
+        that can scale to millions of users.
+    </p>
+
+    <div class="about-highlights">
+        <div>💼 <strong>1+ Year</strong> Backend Development Experience</div>
+        <div>🚀 <strong>Production</strong> Microservices Exposure</div>
+        <div>⚙️ <strong>Spring Boot</strong> & REST API Specialist</div>
+        <div>📈 <strong>Continuous Learner</strong> & Problem Solver</div>
+    </div>
+</section>
 <section>
-    <h2>Skills</h2>
+    <h2>Quick Facts</h2>
     <ul>
-        <li>Java, Spring Boot, REST APIs</li>
-        <li>Microservices, JPA, Hibernate, Swagger</li>
-        <li>MySQL, Git, Postman, kafka</li>
+        <li>📍 Based in Bengaluru, India</li>
+        <li>☕ Java is my primary language</li>
+        <li>🧠 Strong in problem-solving & backend logic</li>
+        <li>🚀 Interested in scalable systems & microservices</li>
     </ul>
 </section>
 
+
 <section>
-    <h2>Experience</h2>
-    <h3>NeoSOFT – Software Engineer</h3>
-    <p>Partner Onboarding Project for Xpressbees</p>
+    <h2>Skills</h2>
+    <div class="skill-tags">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>Microservices</span>
+        <span>Kafka</span>
+        <span>MySQL</span>
+        <span>REST APIs</span>
+    </div>
+
 </section>
 
-<section>
+<section id="experience">
+    <h2>Experience</h2>
+
+    <!-- NeoSOFT -->
+    <div class="experience-card">
+        <h3>Software Engineer – NeoSOFT</h3>
+        <p class="exp-meta">Client: Xpressbees | Bengaluru | 2024 – Present</p>
+
+        <ul class="exp-points">
+            <li>Designed and developed backend services using <strong>Java and Spring Boot</strong> for the Partner Onboarding system.</li>
+            <li>Built and exposed <strong>RESTful APIs</strong> for onboarding partners and managing facility data.</li>
+            <li>Integrated external FMS APIs and implemented validation and transformation layers.</li>
+            <li>Worked in a <strong>microservices-based architecture</strong> with proper exception handling and logging.</li>
+            <li>Collaborated with QA, frontend, and business teams to deliver production-ready features.</li>
+        </ul>
+
+        <div class="exp-tech">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>REST APIs</span>
+            <span>Microservices</span>
+            <span>MySQL</span>
+            <span>Git</span>
+        </div>
+    </div>
+
+    <!-- VoipTech -->
+    <div class="experience-card">
+        <h3>Technical Support Engineer – VoipTech Solutions Pvt. Ltd</h3>
+        <p class="exp-meta">Bhubaneswar, India | Oct 2023 – Feb 2024</p>
+
+        <ul class="exp-points">
+            <li>Supported <strong>Java-based backend APIs</strong> by analyzing issues and assisting in troubleshooting.</li>
+            <li>Debugged and resolved <strong>REST API integration issues</strong> to ensure smooth system communication.</li>
+            <li>Worked closely with developers to improve <strong>performance and reliability</strong> of Java modules.</li>
+            <li>Performed API testing using <strong>Postman</strong> and database validation using <strong>SQL queries</strong>.</li>
+            <li>Provided technical support for system maintenance and production issue analysis.</li>
+        </ul>
+
+        <div class="exp-tech">
+            <span>Java</span>
+            <span>REST APIs</span>
+            <span>Postman</span>
+            <span>SQL</span>
+            <span>Debugging</span>
+        </div>
+    </div>
+
+    <!-- Infotrixs -->
+    <div class="experience-card">
+        <h3>Backend Developer Intern – Infotrixs</h3>
+        <p class="exp-meta">Aurangabad, India | Sept 2023 – Oct 2023</p>
+
+        <ul class="exp-points">
+            <li>Built Java <strong>Servlet-based backend modules</strong> connected to MySQL using JDBC.</li>
+            <li>Implemented CRUD operations and optimized database interactions.</li>
+            <li>Developed responsive web modules using <strong>HTML, CSS, and Java</strong>.</li>
+            <li>Assisted in debugging, troubleshooting, and prototype development.</li>
+            <li>Collaborated with the team to improve delivery speed and code quality.</li>
+        </ul>
+
+        <div class="exp-tech">
+            <span>Java</span>
+            <span>Servlets</span>
+            <span>JDBC</span>
+            <span>MySQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="projects">
     <h2>Projects</h2>
-    <section id="projects">
-        <h2>Projects</h2>
 
-        <div class="project">
-            <h3>Partner Onboarding System</h3>
-            <p>Java, Spring Boot, Microservices</p>
+    <!-- Project 1 -->
+    <div class="project-card">
+        <h3>Partner Onboarding System</h3>
+        <p class="project-meta">Enterprise Backend System | NeoSOFT – Xpressbees</p>
+
+        <p class="project-desc">
+            A production-grade backend system designed to onboard logistics partners
+            and manage facility data in a scalable microservices architecture.
+        </p>
+
+        <ul class="project-points">
+            <li>Developed RESTful APIs using <strong>Java and Spring Boot</strong>.</li>
+            <li>Integrated external <strong>FMS APIs</strong> to fetch and transform facility details.</li>
+            <li>Implemented validation, exception handling, and structured logging.</li>
+            <li>Ensured smooth communication between multiple microservices.</li>
+            <li>Worked closely with QA and frontend teams for production release.</li>
+        </ul>
+
+        <div class="project-tech">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Microservices</span>
+            <span>REST APIs</span>
+            <span>MySQL</span>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+        <h3>Spring Boot CRUD Application</h3>
+        <p class="project-meta">Backend Learning Project</p>
+
+        <p class="project-desc">
+            A complete CRUD-based backend application demonstrating clean API design,
+            database interaction, and best practices using Spring Boot.
+        </p>
+
+        <ul class="project-points">
+            <li>Designed REST APIs for Create, Read, Update, and Delete operations.</li>
+            <li>Used <strong>Spring Data JPA</strong> and Hibernate for database access.</li>
+            <li>Implemented pagination, validation, and global exception handling.</li>
+            <li>Tested APIs using <strong>Postman</strong>.</li>
+        </ul>
+
+        <div class="project-tech">
+            <span>Spring Boot</span>
+            <span>JPA</span>
+            <span>Hibernate</span>
+            <span>MySQL</span>
+            <span>Postman</span>
+        </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+        <h3>Kafka Saga – Event Driven Workflow</h3>
+        <p class="project-meta">Distributed Systems Learning Project</p>
+
+        <p class="project-desc">
+            An event-driven backend system implementing the Saga pattern
+            to manage distributed transactions across multiple microservices.
+        </p>
+
+        <ul class="project-points">
+            <li>Implemented <strong>Saga Orchestrator</strong> for order lifecycle management.</li>
+            <li>Used <strong>Apache Kafka</strong> for asynchronous inter-service communication.</li>
+            <li>Handled success and failure events with compensation logic.</li>
+            <li>Improved system reliability by avoiding tight coupling.</li>
+        </ul>
+
+        <div class="project-tech">
+            <span>Kafka</span>
+            <span>Spring Boot</span>
+            <span>Event-Driven</span>
+            <span>Microservices</span>
+        </div>
+    </div>
+</section>
+<section id="achievements">
+    <h2>Achievements & Impact</h2>
+
+    <div class="achievement-grid">
+        <div class="achievement-card">
+            <h3>🚀 Production Backend Experience</h3>
+            <p>
+                Contributed to a live Partner Onboarding system used by
+                <strong>Xpressbees</strong>, supporting real logistics operations.
+            </p>
         </div>
 
-        <div class="project">
-            <h3>Spring Boot CRUD Application</h3>
-            <p>Spring Boot, JPA, MySQL</p>
+        <div class="achievement-card">
+            <h3>⚙️ API Reliability & Debugging</h3>
+            <p>
+                Resolved multiple REST API integration and data issues,
+                improving system stability and reducing manual errors.
+            </p>
         </div>
 
-        <div class="project">
-            <h3>Kafka Saga (Learning Project)</h3>
-            <p>Spring Boot, Kafka, Event-driven Architecture</p>
+        <div class="achievement-card">
+            <h3>📈 Backend Performance Improvements</h3>
+            <p>
+                Optimized Java-based modules and database interactions,
+                improving response time and maintainability.
+            </p>
         </div>
-    </section>
+
+        <div class="achievement-card">
+            <h3>🧠 Strong Learning Curve</h3>
+            <p>
+                Progressed from Java Servlets and JDBC to
+                <strong>Spring Boot, Microservices, and Kafka-based workflows</strong>
+                within a year.
+            </p>
+        </div>
+
+        <div class="achievement-card">
+            <h3>🤝 Cross-Team Collaboration</h3>
+            <p>
+                Worked closely with frontend, QA, and business teams
+                to deliver production-ready backend features.
+            </p>
+        </div>
+
+        <div class="achievement-card">
+            <h3>📚 Continuous Skill Upgrade</h3>
+            <p>
+                Actively learning distributed systems, event-driven architecture,
+                and scalable backend design patterns.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="tech-stack">
+    <h2>Tech Stack</h2>
+
+    <div class="tech-grid">
+        <div class="tech-card">
+            <span class="tech-icon">☕</span>
+            <p>Java</p>
+        </div>
+
+        <div class="tech-card">
+            <span class="tech-icon">🌱</span>
+            <p>Spring Boot</p>
+        </div>
+
+        <div class="tech-card">
+            <span class="tech-icon">🧩</span>
+            <p>Microservices</p>
+        </div>
+
+        <div class="tech-card">
+            <span class="tech-icon">🔗</span>
+            <p>REST APIs</p>
+        </div>
+
+        <div class="tech-card">
+            <span class="tech-icon">🗄️</span>
+            <p>MySQL</p>
+        </div>
+
+        <div class="tech-card">
+            <span class="tech-icon">📨</span>
+            <p>Kafka</p>
+        </div>
+
+        <div class="tech-card">
+            <span class="tech-icon">🐙</span>
+            <p>Git</p>
+        </div>
+
+        <div class="tech-card">
+            <span class="tech-icon">🧪</span>
+            <p>Postman</p>
+        </div>
+    </div>
+</section>
+
 
 </section>
 
@@ -108,6 +401,61 @@
         document.body.classList.contains("dark") ? "☀️" : "🌙";
     });
 </script>
+<script>
+    const text = "Java Backend Developer | Spring Boot | Microservices";
+    let i = 0;
+
+    function typeEffect() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 70);
+      }
+    }
+
+    typeEffect();
+</script>
+<script>
+    window.addEventListener("scroll", () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - window.innerHeight;
+      document.getElementById("progress").style.width =
+        (scrollTop / height) * 100 + "%";
+    });
+</script>
+<script>
+    console.log("%cHey Recruiter 👋 Built with ❤️ by Bishwojeet",
+      "color:#38bdf8; font-size:16px; font-weight:bold;");
+</script>
+<footer class="footer">
+    <div class="footer-content">
+        <h2>Let’s Build Something Great Together</h2>
+
+        <p>
+            I’m a Java Backend Developer experienced in Spring Boot, Microservices,
+            and production systems. Open to backend-focused opportunities.
+        </p>
+
+        <div class="footer-actions">
+            <a href="mailto:bishwojeet@email.com" class="cta-btn">Hire Me</a>
+            <a href="https://drive.google.com/file/d/1WyOFkKLWr0HnjEuFiR2hvprJxcLLgEG6/view?usp=sharing"
+               target="_blank"
+               class="cta-btn outline">
+                View Resume
+            </a>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/bishwojeet-kumar-patra-898288226/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/patrabishwo" target="_blank">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="footer-note">
+            © 2025 Bishwojeet Kumar Patra · Java Backend Developer
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>
