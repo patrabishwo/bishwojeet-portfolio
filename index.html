@@ -31,6 +31,8 @@
         <!-- ✅ Hamburger is here -->
         <button class="hamburger" id="hamburger">☰</button>
         <button id="topBtn">↑</button>
+        <button id="sidebarToggle" class="sidebar-toggle">☰</button>
+
 
     </div>
 </nav>
@@ -963,7 +965,44 @@
     });
 </script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sidebar = document.getElementById("sidebar");
+      const toggleBtn = document.getElementById("sidebarToggle");
 
+      if (!sidebar || !toggleBtn) {
+        console.error("Sidebar or toggle button not found");
+        return;
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        console.log("Sidebar toggled");
+      });
+    });
+</script>
+
+<script>
+    const sidebarLinks = document.querySelectorAll(".sidebar-nav a");
+
+    window.addEventListener("scroll", () => {
+      let fromTop = window.scrollY + 100;
+
+      sidebarLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute("href"));
+        if (!section) return;
+
+        if (
+          section.offsetTop <= fromTop &&
+          section.offsetTop + section.offsetHeight > fromTop
+        ) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
+    });
+</script>
 
 
 <footer class="footer">
@@ -997,4 +1036,26 @@
 </footer>
 
 </body>
+<!-- Sidebar -->
+<aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <h3>BKP</h3>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a href="#home"> Home</a>
+        <a href="#projects"> Projects</a>
+        <a href="#experience"> Experience</a>
+        <a href="#education"> Education</a>
+        <a href="#resources"> Resources</a>
+        <a href="#contact"> Contact</a>
+    </nav>
+
+    <div class="sidebar-footer">
+        <p>Bishwojeet Patra</p>
+        <small>Java Backend Engineer</small>
+    </div>
+</aside>
+
+
 </html>
